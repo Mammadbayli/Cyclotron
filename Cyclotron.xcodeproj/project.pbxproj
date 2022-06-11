@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D7DD3D42854F41400CE97E8 /* CyclotronApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3D32854F41400CE97E8 /* CyclotronApp.swift */; };
+		6D7DD3D62854F41400CE97E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3D52854F41400CE97E8 /* ContentView.swift */; };
+		6D7DD3D82854F41800CE97E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7DD3D72854F41800CE97E8 /* Assets.xcassets */; };
+		6D7DD3DB2854F41800CE97E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7DD3DA2854F41800CE97E8 /* Preview Assets.xcassets */; };
+		6D7DD3DD2854F41800CE97E8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3DC2854F41800CE97E8 /* Persistence.swift */; };
+		6D7DD3E02854F41800CE97E8 /* Cyclotron.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3DE2854F41800CE97E8 /* Cyclotron.xcdatamodeld */; };
+		6D7DD3EA2854F41800CE97E8 /* CyclotronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3E92854F41800CE97E8 /* CyclotronTests.swift */; };
+		6D7DD3F42854F41800CE97E8 /* CyclotronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3F32854F41800CE97E8 /* CyclotronUITests.swift */; };
+		6D7DD3F62854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D7DD3E62854F41800CE97E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7DD3C82854F41400CE97E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7DD3CF2854F41400CE97E8;
+			remoteInfo = Cyclotron;
+		};
+		6D7DD3F02854F41800CE97E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7DD3C82854F41400CE97E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7DD3CF2854F41400CE97E8;
+			remoteInfo = Cyclotron;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D7DD3D02854F41400CE97E8 /* Cyclotron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cyclotron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7DD3D32854F41400CE97E8 /* CyclotronApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronApp.swift; sourceTree = "<group>"; };
+		6D7DD3D52854F41400CE97E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D7DD3D72854F41800CE97E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D7DD3DA2854F41800CE97E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D7DD3DC2854F41800CE97E8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6D7DD3DF2854F41800CE97E8 /* Cyclotron.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cyclotron.xcdatamodel; sourceTree = "<group>"; };
+		6D7DD3E52854F41800CE97E8 /* CyclotronTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclotronTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7DD3E92854F41800CE97E8 /* CyclotronTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronTests.swift; sourceTree = "<group>"; };
+		6D7DD3EF2854F41800CE97E8 /* CyclotronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclotronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7DD3F32854F41800CE97E8 /* CyclotronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronUITests.swift; sourceTree = "<group>"; };
+		6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D7DD3CD2854F41400CE97E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3E22854F41800CE97E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3EC2854F41800CE97E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D7DD3C72854F41400CE97E8 = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3D22854F41400CE97E8 /* Cyclotron */,
+				6D7DD3E82854F41800CE97E8 /* CyclotronTests */,
+				6D7DD3F22854F41800CE97E8 /* CyclotronUITests */,
+				6D7DD3D12854F41400CE97E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D7DD3D12854F41400CE97E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3D02854F41400CE97E8 /* Cyclotron.app */,
+				6D7DD3E52854F41800CE97E8 /* CyclotronTests.xctest */,
+				6D7DD3EF2854F41800CE97E8 /* CyclotronUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D7DD3D22854F41400CE97E8 /* Cyclotron */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3D32854F41400CE97E8 /* CyclotronApp.swift */,
+				6D7DD3D52854F41400CE97E8 /* ContentView.swift */,
+				6D7DD3D72854F41800CE97E8 /* Assets.xcassets */,
+				6D7DD3DC2854F41800CE97E8 /* Persistence.swift */,
+				6D7DD3DE2854F41800CE97E8 /* Cyclotron.xcdatamodeld */,
+				6D7DD3D92854F41800CE97E8 /* Preview Content */,
+			);
+			path = Cyclotron;
+			sourceTree = "<group>";
+		};
+		6D7DD3D92854F41800CE97E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3DA2854F41800CE97E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D7DD3E82854F41800CE97E8 /* CyclotronTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3E92854F41800CE97E8 /* CyclotronTests.swift */,
+			);
+			path = CyclotronTests;
+			sourceTree = "<group>";
+		};
+		6D7DD3F22854F41800CE97E8 /* CyclotronUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3F32854F41800CE97E8 /* CyclotronUITests.swift */,
+				6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */,
+			);
+			path = CyclotronUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D7DD3CF2854F41400CE97E8 /* Cyclotron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7DD3F92854F41800CE97E8 /* Build configuration list for PBXNativeTarget "Cyclotron" */;
+			buildPhases = (
+				6D7DD3CC2854F41400CE97E8 /* Sources */,
+				6D7DD3CD2854F41400CE97E8 /* Frameworks */,
+				6D7DD3CE2854F41400CE97E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cyclotron;
+			productName = Cyclotron;
+			productReference = 6D7DD3D02854F41400CE97E8 /* Cyclotron.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D7DD3E42854F41800CE97E8 /* CyclotronTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7DD3FC2854F41800CE97E8 /* Build configuration list for PBXNativeTarget "CyclotronTests" */;
+			buildPhases = (
+				6D7DD3E12854F41800CE97E8 /* Sources */,
+				6D7DD3E22854F41800CE97E8 /* Frameworks */,
+				6D7DD3E32854F41800CE97E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7DD3E72854F41800CE97E8 /* PBXTargetDependency */,
+			);
+			name = CyclotronTests;
+			productName = CyclotronTests;
+			productReference = 6D7DD3E52854F41800CE97E8 /* CyclotronTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D7DD3EE2854F41800CE97E8 /* CyclotronUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7DD3FF2854F41800CE97E8 /* Build configuration list for PBXNativeTarget "CyclotronUITests" */;
+			buildPhases = (
+				6D7DD3EB2854F41800CE97E8 /* Sources */,
+				6D7DD3EC2854F41800CE97E8 /* Frameworks */,
+				6D7DD3ED2854F41800CE97E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7DD3F12854F41800CE97E8 /* PBXTargetDependency */,
+			);
+			name = CyclotronUITests;
+			productName = CyclotronUITests;
+			productReference = 6D7DD3EF2854F41800CE97E8 /* CyclotronUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D7DD3C82854F41400CE97E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6D7DD3CF2854F41400CE97E8 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					6D7DD3E42854F41800CE97E8 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 6D7DD3CF2854F41400CE97E8;
+					};
+					6D7DD3EE2854F41800CE97E8 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 6D7DD3CF2854F41400CE97E8;
+					};
+				};
+			};
+			buildConfigurationList = 6D7DD3CB2854F41400CE97E8 /* Build configuration list for PBXProject "Cyclotron" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D7DD3C72854F41400CE97E8;
+			productRefGroup = 6D7DD3D12854F41400CE97E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D7DD3CF2854F41400CE97E8 /* Cyclotron */,
+				6D7DD3E42854F41800CE97E8 /* CyclotronTests */,
+				6D7DD3EE2854F41800CE97E8 /* CyclotronUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D7DD3CE2854F41400CE97E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD3DB2854F41800CE97E8 /* Preview Assets.xcassets in Resources */,
+				6D7DD3D82854F41800CE97E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3E32854F41800CE97E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3ED2854F41800CE97E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D7DD3CC2854F41400CE97E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD3DD2854F41800CE97E8 /* Persistence.swift in Sources */,
+				6D7DD3D62854F41400CE97E8 /* ContentView.swift in Sources */,
+				6D7DD3D42854F41400CE97E8 /* CyclotronApp.swift in Sources */,
+				6D7DD3E02854F41800CE97E8 /* Cyclotron.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3E12854F41800CE97E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD3EA2854F41800CE97E8 /* CyclotronTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7DD3EB2854F41800CE97E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7DD3F62854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift in Sources */,
+				6D7DD3F42854F41800CE97E8 /* CyclotronUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D7DD3E72854F41800CE97E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7DD3CF2854F41400CE97E8 /* Cyclotron */;
+			targetProxy = 6D7DD3E62854F41800CE97E8 /* PBXContainerItemProxy */;
+		};
+		6D7DD3F12854F41800CE97E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7DD3CF2854F41400CE97E8 /* Cyclotron */;
+			targetProxy = 6D7DD3F02854F41800CE97E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D7DD3F72854F41800CE97E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D7DD3F82854F41800CE97E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D7DD3FA2854F41800CE97E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cyclotron/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.Cyclotron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D7DD3FB2854F41800CE97E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cyclotron/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.Cyclotron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D7DD3FD2854F41800CE97E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.CyclotronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cyclotron.app/Cyclotron";
+			};
+			name = Debug;
+		};
+		6D7DD3FE2854F41800CE97E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.CyclotronTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cyclotron.app/Cyclotron";
+			};
+			name = Release;
+		};
+		6D7DD4002854F41800CE97E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.CyclotronUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cyclotron;
+			};
+			name = Debug;
+		};
+		6D7DD4012854F41800CE97E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammadbayli.CyclotronUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cyclotron;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D7DD3CB2854F41400CE97E8 /* Build configuration list for PBXProject "Cyclotron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7DD3F72854F41800CE97E8 /* Debug */,
+				6D7DD3F82854F41800CE97E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7DD3F92854F41800CE97E8 /* Build configuration list for PBXNativeTarget "Cyclotron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7DD3FA2854F41800CE97E8 /* Debug */,
+				6D7DD3FB2854F41800CE97E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7DD3FC2854F41800CE97E8 /* Build configuration list for PBXNativeTarget "CyclotronTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7DD3FD2854F41800CE97E8 /* Debug */,
+				6D7DD3FE2854F41800CE97E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7DD3FF2854F41800CE97E8 /* Build configuration list for PBXNativeTarget "CyclotronUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7DD4002854F41800CE97E8 /* Debug */,
+				6D7DD4012854F41800CE97E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6D7DD3DE2854F41800CE97E8 /* Cyclotron.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6D7DD3DF2854F41800CE97E8 /* Cyclotron.xcdatamodel */,
+			);
+			currentVersion = 6D7DD3DF2854F41800CE97E8 /* Cyclotron.xcdatamodel */;
+			path = Cyclotron.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6D7DD3C82854F41400CE97E8 /* Project object */;
+}
