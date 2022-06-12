@@ -18,29 +18,30 @@ class LocationManager: NSObject, ObservableObject {
         super.init()
         
         locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
+        
+        locationManager.startUpdatingLocation()
     }
     
-    func distance(to: CLLocation, from: CLLocation) -> Double {
-        return to.distance(from: from)
-    }
     
     func distanceFromCurrentLocation(to: CLLocation) -> Double {
-        return distance(to: to, from: currentLocation)
+        return currentLocation.distance(from: to)
     }
     
     func distancestringFromCurrentLocation(to: CLLocation) -> String {
-        let distance = distance(to: to, from: currentLocation)
+        let distance = distanceFromCurrentLocation(to: to)
         
         var result = ""
         
+        let formatter = NumberFormatter()
+
+        
         if distance >= 1000 {
-            let formatter = NumberFormatter()
             formatter.maximumFractionDigits = 3
-            
             result = (formatter.string(from: NSNumber(value: distance/1000)) ?? "") + " km"
         } else {
-            result = String(distance) + " m"
+            formatter.maximumFractionDigits = 0
+            result = (formatter.string(from: NSNumber(value: distance)) ?? "") + " m"
         }
         
 

@@ -29,6 +29,6 @@ extension Location: Codable {
 
 extension Location {
     var cllLocation: CLLocation {
-        return CLLocation(latitude: coordinate.x, longitude: coordinate.y)
+        return CLLocation(latitude: coordinate.y, longitude: coordinate.x)
     }
 }
