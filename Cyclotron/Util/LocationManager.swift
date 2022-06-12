@@ -6,6 +6,7 @@
 //
 
 import CoreLocation
+import MapKit
 
 class LocationManager: NSObject, ObservableObject {
     @Published var currentLocation = CLLocation()
@@ -19,10 +20,12 @@ class LocationManager: NSObject, ObservableObject {
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        
-        locationManager.startUpdatingLocation()
     }
     
+    
+    func startUpdatingLocation() {
+        locationManager.startUpdatingLocation()
+    }
     
     func distanceFromCurrentLocation(to: CLLocation) -> Double {
         return currentLocation.distance(from: to)
@@ -65,3 +68,4 @@ extension LocationManager: CLLocationManagerDelegate {
         
     }
 }
+

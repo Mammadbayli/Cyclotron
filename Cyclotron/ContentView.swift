@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(shopsManager.shops) { shop in
-                NavigationLink(destination: EmptyView()) {
+                NavigationLink(destination: MapView(markerLocation: shop.location.cllLocation).navigationTitle(shop.properties.label)) {
                     HStack {
                         Text(shop.properties.label)
                         
@@ -28,6 +28,7 @@ struct ContentView: View {
             }
         }.onAppear {
             Task {
+                locationManager.startUpdatingLocation()
                 await self.shopsManager.loadData()
             }
         }
