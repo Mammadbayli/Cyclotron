@@ -7,10 +7,11 @@
 
 import Foundation
 
-@MainActor
+
 class ShopsManager: ObservableObject {
     @Published var shops = [Shop]()
     
+    @MainActor
     func loadData() async {
         guard let data = await HTTP.sharedInstance.get(resource: Constants.backendURL.rawValue) else {
             return

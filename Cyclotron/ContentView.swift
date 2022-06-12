@@ -14,24 +14,44 @@ struct ContentView: View {
     @ObservedObject var shopsManager = ShopsManager()
     @ObservedObject var locationManager = LocationManager.sharedInstance
     
+    var shops: [Shop] {
+        shopsManager.shops.sorted(by: { a, b in
+            distanceOfItem(item: a.shopListRowItem) <= distanceOfItem(item: b.shopListRowItem)
+        })
+    }
+    
+    init() {
+        UITableView.appearance().sectionFooterHeight = 0
+    }
+    
     @MainActor
     var body: some View {
         NavigationView {
-            List(shopsManager.shops) { shop in
-                NavigationLink(destination: MapView(markerLocation: shop.location.cllLocation).navigationTitle(shop.properties.label)) {
-                    HStack {
-                        Text(shop.properties.label)
+            List(shops) { shop in
+                let item = shop.shopListRowItem
+                Section {
+                    ZStack {
+                        ShopListRow(item: item, currentLocation: locationManager.currentLocation)
+                            .padding(.vertical, 5)
+                            .cornerRadius(10)
                         
-                        Text(LocationManager.sharedInstance.distancestringFromCurrentLocation(to: shop.location.cllLocation))
+                        NavigationLink(destination: MapView(shopListItem: item).navigationTitle(item.title)) {
+                        }.opacity(0)
                     }
                 }
             }
-        }.onAppear {
+            .navigationTitle("Shops")
+        }
+        .onAppear {
             Task {
                 locationManager.startUpdatingLocation()
                 await self.shopsManager.loadData()
             }
-        }
+        }.navigationTitle("Shops")
+    }
+    
+    func distanceOfItem(item: ShopListRowItem) -> Double {
+        LocationManager.sharedInstance.distanceFromCurrentLocation(to: item.location.cllLocation)
     }
 }
 

@@ -23,3 +23,18 @@ extension Shop: Codable {
 }
 
 extension Shop: Identifiable {}
+
+extension Shop {
+    var shopListRowItem: ShopListRowItem {
+        var item = ShopListRowItem(location: location)
+        
+        item.id = id
+        item.title = properties.label
+        item.freeRacks = properties.freeRacks
+        item.bikes = properties.bikes
+        item.racks = properties.bikeRacks
+        item.type = type
+        
+        return item
+    }
+}
