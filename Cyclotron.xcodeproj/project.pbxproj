@@ -16,6 +16,15 @@
 		6D7DD3EA2854F41800CE97E8 /* CyclotronTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3E92854F41800CE97E8 /* CyclotronTests.swift */; };
 		6D7DD3F42854F41800CE97E8 /* CyclotronUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3F32854F41800CE97E8 /* CyclotronUITests.swift */; };
 		6D7DD3F62854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */; };
+		6D7DD4042854F48C00CE97E8 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4032854F48C00CE97E8 /* Shop.swift */; };
+		6D7DD4062854F4AF00CE97E8 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4052854F4AF00CE97E8 /* Location.swift */; };
+		6D7DD4082854F4E300CE97E8 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4072854F4E300CE97E8 /* Coordinate.swift */; };
+		6D7DD40A2854F65B00CE97E8 /* ShopProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4092854F65B00CE97E8 /* ShopProperties.swift */; };
+		6D7DD40D2854F75C00CE97E8 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD40C2854F75C00CE97E8 /* HTTP.swift */; };
+		6D7DD40F2854FA4A00CE97E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD40E2854FA4A00CE97E8 /* Constants.swift */; };
+		6D7DD4122855007D00CE97E8 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4112855007D00CE97E8 /* Response.swift */; };
+		6D7DD4142855083D00CE97E8 /* ShopsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4132855083D00CE97E8 /* ShopsManager.swift */; };
+		6D7DD4162856027C00CE97E8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7DD4152856027C00CE97E8 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,16 @@
 		6D7DD3EF2854F41800CE97E8 /* CyclotronUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyclotronUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7DD3F32854F41800CE97E8 /* CyclotronUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronUITests.swift; sourceTree = "<group>"; };
 		6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclotronUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6D7DD4032854F48C00CE97E8 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		6D7DD4052854F4AF00CE97E8 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		6D7DD4072854F4E300CE97E8 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		6D7DD4092854F65B00CE97E8 /* ShopProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProperties.swift; sourceTree = "<group>"; };
+		6D7DD40C2854F75C00CE97E8 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		6D7DD40E2854FA4A00CE97E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D7DD4102854FF0900CE97E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6D7DD4112855007D00CE97E8 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		6D7DD4132855083D00CE97E8 /* ShopsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsManager.swift; sourceTree = "<group>"; };
+		6D7DD4152856027C00CE97E8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +117,9 @@
 		6D7DD3D22854F41400CE97E8 /* Cyclotron */ = {
 			isa = PBXGroup;
 			children = (
+				6D7DD4102854FF0900CE97E8 /* Info.plist */,
+				6D7DD40B2854F74300CE97E8 /* Util */,
+				6D7DD4022854F47200CE97E8 /* Model */,
 				6D7DD3D32854F41400CE97E8 /* CyclotronApp.swift */,
 				6D7DD3D52854F41400CE97E8 /* ContentView.swift */,
 				6D7DD3D72854F41800CE97E8 /* Assets.xcassets */,
@@ -131,6 +153,29 @@
 				6D7DD3F52854F41800CE97E8 /* CyclotronUITestsLaunchTests.swift */,
 			);
 			path = CyclotronUITests;
+			sourceTree = "<group>";
+		};
+		6D7DD4022854F47200CE97E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD4032854F48C00CE97E8 /* Shop.swift */,
+				6D7DD4052854F4AF00CE97E8 /* Location.swift */,
+				6D7DD4072854F4E300CE97E8 /* Coordinate.swift */,
+				6D7DD4092854F65B00CE97E8 /* ShopProperties.swift */,
+				6D7DD4112855007D00CE97E8 /* Response.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D7DD40B2854F74300CE97E8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD40C2854F75C00CE97E8 /* HTTP.swift */,
+				6D7DD40E2854FA4A00CE97E8 /* Constants.swift */,
+				6D7DD4132855083D00CE97E8 /* ShopsManager.swift */,
+				6D7DD4152856027C00CE97E8 /* LocationManager.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +308,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7DD40D2854F75C00CE97E8 /* HTTP.swift in Sources */,
+				6D7DD4082854F4E300CE97E8 /* Coordinate.swift in Sources */,
+				6D7DD40F2854FA4A00CE97E8 /* Constants.swift in Sources */,
 				6D7DD3DD2854F41800CE97E8 /* Persistence.swift in Sources */,
 				6D7DD3D62854F41400CE97E8 /* ContentView.swift in Sources */,
+				6D7DD4142855083D00CE97E8 /* ShopsManager.swift in Sources */,
 				6D7DD3D42854F41400CE97E8 /* CyclotronApp.swift in Sources */,
+				6D7DD4042854F48C00CE97E8 /* Shop.swift in Sources */,
+				6D7DD4122855007D00CE97E8 /* Response.swift in Sources */,
+				6D7DD4062854F4AF00CE97E8 /* Location.swift in Sources */,
+				6D7DD40A2854F65B00CE97E8 /* ShopProperties.swift in Sources */,
 				6D7DD3E02854F41800CE97E8 /* Cyclotron.xcdatamodeld in Sources */,
+				6D7DD4162856027C00CE97E8 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cyclotron/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cyclotron/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -455,6 +510,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Cyclotron/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cyclotron/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
