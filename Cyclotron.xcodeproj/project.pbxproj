@@ -125,13 +125,11 @@
 		6D7DD3D22854F41400CE97E8 /* Cyclotron */ = {
 			isa = PBXGroup;
 			children = (
+				6D7DD4212856645400CE97E8 /* View */,
 				6D7DD4102854FF0900CE97E8 /* Info.plist */,
 				6D7DD40B2854F74300CE97E8 /* Util */,
 				6D7DD4022854F47200CE97E8 /* Model */,
 				6D7DD3D32854F41400CE97E8 /* CyclotronApp.swift */,
-				6D7DD3D52854F41400CE97E8 /* ContentView.swift */,
-				6D7DD41728560C6700CE97E8 /* MapView.swift */,
-				6D7DD41928563B2000CE97E8 /* ShopListRow.swift */,
 				6D7DD3D72854F41800CE97E8 /* Assets.xcassets */,
 				6D7DD3DC2854F41800CE97E8 /* Persistence.swift */,
 				6D7DD3DE2854F41800CE97E8 /* Cyclotron.xcdatamodeld */,
@@ -188,6 +186,16 @@
 				6D7DD4152856027C00CE97E8 /* LocationManager.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		6D7DD4212856645400CE97E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D7DD3D52854F41400CE97E8 /* ContentView.swift */,
+				6D7DD41728560C6700CE97E8 /* MapView.swift */,
+				6D7DD41928563B2000CE97E8 /* ShopListRow.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

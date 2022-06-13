@@ -51,7 +51,7 @@ struct ContentView: View {
     }
     
     func distanceOfItem(item: ShopListRowItem) -> Double {
-        LocationManager.sharedInstance.distanceFromCurrentLocation(to: item.location.cllLocation)
+        locationManager.currentLocation.distance(from: item.location.cllLocation)
     }
 }
 

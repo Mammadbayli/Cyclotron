@@ -26,31 +26,6 @@ class LocationManager: NSObject, ObservableObject {
     func startUpdatingLocation() {
         locationManager.startUpdatingLocation()
     }
-    
-    func distanceFromCurrentLocation(to: CLLocation) -> Double {
-        return currentLocation.distance(from: to)
-    }
-    
-    func distancestringFromCurrentLocation(to: CLLocation) -> String {
-        let distance = distanceFromCurrentLocation(to: to)
-        
-        var result = ""
-        
-        let formatter = NumberFormatter()
-
-        
-        if distance >= 1000 {
-            formatter.maximumFractionDigits = 3
-            result = (formatter.string(from: NSNumber(value: distance/1000)) ?? "") + " km"
-        } else {
-            formatter.maximumFractionDigits = 0
-            result = (formatter.string(from: NSNumber(value: distance)) ?? "") + " m"
-        }
-        
-
-        
-        return result
-    }
 }
 
 extension LocationManager: CLLocationManagerDelegate {
